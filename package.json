@@ -24,7 +24,5 @@
     "start": "bun src/index.ts"
   },
   "type": "module",
-  "dependencies": {
-    "cromo": "^0.3.1"
-  }
+  "dependencies": { "cromo": "^0.3.1" }
 }
