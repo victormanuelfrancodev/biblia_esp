@@ -3,8 +3,8 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./bible.db"
+  provider = "postgresql"
+  url      = "postgres://default:d4nepLIZOh9v@ep-calm-grass-86555014.us-east-1.postgres.vercel-storage.com:5432/verceldb"
 }
 
 model verse {
