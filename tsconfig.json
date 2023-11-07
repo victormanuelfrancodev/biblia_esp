@@ -14,8 +14,4 @@
     "include": [
         "./api/*.ts"
     ],
-    "exclude": [
-        "dist",
-        "node_modules"
-    ],
 }
