@@ -7,7 +7,6 @@ const cromo = new Cromo({
 })
 
 cromo.setMiddleware([cors])
-
 cromo.start(port => {
   console.log(`Server running on port ${port}`)
 })

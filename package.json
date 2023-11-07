@@ -24,5 +24,8 @@
     "start": "bun src/index.ts"
   },
   "type": "module",
-  "dependencies": { "cromo": "^0.3.1", "typescript": "latest" }
+  "dependencies": {
+    "cromo": "^0.3.1",
+    "typescript": "latest"
+  }
 }
