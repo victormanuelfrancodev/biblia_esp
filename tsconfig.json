@@ -4,11 +4,16 @@
         "rootDir": "./src",
         "sourceMap": true,
         "strict": true,
-        "lib": ["esnext"],
+        "lib": [
+            "esnext"
+        ],
         "target": "es6",
         "module": "commonjs",
         "esModuleInterop": true
     },
+    "include": [
+        "./api/*.ts"
+    ],
     "exclude": [
         "dist",
         "node_modules"

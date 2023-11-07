@@ -7,7 +7,7 @@ import { errorHandler } from './error-handler'
 
 // Instancia de express
 const app = express()
-const port = process.env.PORT || 5000
+const port = 3000
 
 app.use(helmet())
 app.use(cors())
@@ -22,3 +22,5 @@ app.use(errorHandler)
 app.listen(port, () => {
   console.log(`Servidor ejecutandose en el puerto ${port}`)
 })
+
+export default app
