@@ -1,14 +1,5 @@
 {
-    "version": 3,
-    "builds": [
-        {
-            "src": "package.json",
-            "use": "@vercel/node",
-            "config": {
-                "distDir": "dist"
-            }
-        }
-    ],
+    "version": 2,
     "routes": [
         {
             "src": "/(.*)",
