@@ -1,10 +1,24 @@
-import { Cromo } from 'cromo'
-import { cors } from './middleware/cors'
+import express, { json } from 'express'
+import routes from './routes'
+import compression from 'compression'
+import helmet from 'helmet'
+import cors from 'cors'
+import { errorHandler } from './error-handler'
 
-const cromo = new Cromo()
+// Instancia de express
+const app = express()
+const port = process.env.PORT || 5000
 
-cromo.setMiddleware([cors])
+app.use(helmet())
+app.use(cors())
+app.use(compression())
+app.use(json())
+// app.use(catchErrors)
 
-cromo.listen(port => {
-  console.log(`Listening on http://localhost:${port}...`)
+app.use('/', routes)
+
+app.use(errorHandler)
+
+app.listen(port, () => {
+  console.log(`Servidor ejecutandose en el puerto ${port}`)
 })
