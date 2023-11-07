@@ -1,19 +1,30 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "bundler",
-    "moduleDetection": "force",
-    "allowImportingTsExtensions": true,
+    "lib": [
+      "ESNext"
+    ],
+    "module": "CommonJS", // Cambiado para Node.js
+    "target": "ESNext",
+    "moduleResolution": "node", // Valor válido para Node.js
+    // "moduleDetection": "force", // No es una opción válida, eliminada
+    // "allowImportingTsExtensions": true, // No es una opción válida, eliminada
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    "noEmit": false, // Cambiado para permitir emisión de archivos .js
+    "esModuleInterop": true, // Para permitir default imports
     "types": [
-      "bun-types" // add Bun global
-    ]
-  }
+      "node"
+    ], // Esto debería apuntar a los tipos de Node si los usas
+    "outDir": "./dist" // Especifica dónde colocar los archivos transpilados
+  },
+  "include": [
+    "src/**/*" // Ajusta esto para incluir tus archivos TypeScript
+  ],
+  "exclude": [
+    "node_modules", // Excluye la carpeta de node_modules
+    "**/*.test.ts" // Excluye archivos de pruebas, si los tienes
+  ]
 }
