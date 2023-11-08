@@ -2,11 +2,11 @@
 
 ### ¿Qué es?
 
-Es una API que devuelve la Biblia versión **Reina Valera 1909** en formato JSON.
+Es una API que devuelve la Biblia versión
 
 ### ¿Cómo usarla?
 
-La API se encuentra en la siguiente dirección: <https://biblia.my.to/book>.
+La API se encuentra en la siguiente dirección: <https://biblia-esp.vercel.app>.
 
 ## Endpoints
 
@@ -24,7 +24,7 @@ La API se encuentra en la siguiente dirección: <https://biblia.my.to/book>.
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
-| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId](https://biblia.my.to/book/gen) | Devuelve el libro con el ID especificado. |
+| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId](https://biblia-esp.vercel.app/gen) | Devuelve el libro con el ID especificado. |
 
 ### Responses
 
@@ -37,7 +37,7 @@ La API se encuentra en la siguiente dirección: <https://biblia.my.to/book>.
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
-| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter](https://biblia.my.to/book/gen/chapter) | Devuelve todos los capítulos del libro con el ID especificado. |
+| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter](https://biblia-esp.vercel.app/book/gen/chapter) | Devuelve todos los capítulos del libro con el ID especificado. |
 
 ### Responses
 
@@ -49,7 +49,7 @@ La API se encuentra en la siguiente dirección: <https://biblia.my.to/book>.
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
-| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter/:chapterId](https://biblia.my.to/book/gen/chapter/1) | Devuelve el capítulo con el ID especificado. |
+| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter/:chapterId](https://biblia-esp.vercel.app/book/gen/chapter/1) | Devuelve el capítulo con el ID especificado. |
 
 ### Responses
 
@@ -62,7 +62,7 @@ La API se encuentra en la siguiente dirección: <https://biblia.my.to/book>.
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
-| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter/:chapterId/verse](https://biblia.my.to/book/gen/chapter/1/verse) | Devuelve todos los versículos del capítulo con el ID especificado. |
+| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter/:chapterId/verse](https://biblia-esp.vercel.app/book/gen/chapter/1/verse) | Devuelve todos los versículos del capítulo con el ID especificado. |
 
 ### Responses
 
@@ -74,7 +74,7 @@ La API se encuentra en la siguiente dirección: <https://biblia.my.to/book>.
 
 | Método | Endpoint | Descripción |
 | --- | --- | --- |
-| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter/:chapterId/verse/:verseId](https://biblia.my.to/book/gen/chapter/1/verse/1) | Devuelve el versículo con el ID especificado. :verseId soporta rangos (ej. 1-3,5). |
+| ![GET](https://img.shields.io/badge/GET-0D96F6?style=for-the-badge) | [/book/:bookId/chapter/:chapterId/verse/:verseId](https://biblia-esp.vercel.appbook/gen/chapter/1/verse/1) | Devuelve el versículo con el ID especificado. :verseId soporta rangos (ej. 1-3,5). |
 
 ### Responses
 
